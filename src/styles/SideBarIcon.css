@@ -9,6 +9,29 @@
     transition: border 60ms ease-out, border-radius 60ms ease-out;
 }
 
+.SideBarIcon.active::before {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 2rem;
+    left: -1px;
+    border-left: #ffffff solid 4px;
+    border-radius: 1rem;
+}
+
+.SideBarIcon:not(.active):hover:before {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 1rem;
+    left: -1px;
+    border-left: #ffffff solid 4px;
+    transform: translate(0px, 0px) scale(1, 0.25);
+    animation: hoverBorderAnimation 70ms 1 ease-in;
+    animation-fill-mode: forwards;
+    border-radius: 1rem;
+}
+
 .SideBarIcon:hover {
     border: 0px solid rgba(100, 100, 100, 1);
     border-radius: 0.8rem;
@@ -39,6 +62,16 @@
 
 @keyframes toolTipAnimation {
     from {
-      transform: translate(-60px, 0px);
+        transform: translate(-60px, 0px);
+    }
+}
+
+@keyframes hoverBorderAnimation {
+    from {
+        transform: translate(0px, 0px) scale(1, 0.25);
+    }
+    
+    to {
+        transform: translate(0px, 0px);
     }
 }

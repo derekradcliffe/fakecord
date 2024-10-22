@@ -1,8 +1,15 @@
 import '../styles/SideBarIcon.css';
 
-const SideBarIcon = ({icon, tooltip}) => {
+const SideBarIcon = ({icon, tooltip, active}) => {
     return (
-      <div className="SideBarIcon">
+      active === "true" ?
+        <div className="SideBarIcon active" >
+          {icon}
+
+          <span class="sidebar-tooltip">{tooltip}</span>
+        </div>
+      :
+      <div className="SideBarIcon" >
         {icon}
 
         <span class="sidebar-tooltip">{tooltip}</span>
