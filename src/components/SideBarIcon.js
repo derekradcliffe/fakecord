@@ -6,13 +6,13 @@ const SideBarIcon = ({icon, tooltip, active}) => {
         <div className="SideBarIcon active" >
           {icon}
 
-          <span class="sidebar-tooltip">{tooltip}</span>
+          <span className="sidebar-tooltip">{tooltip}</span>
         </div>
       :
       <div className="SideBarIcon" >
         {icon}
 
-        <span class="sidebar-tooltip">{tooltip}</span>
+        <span className="sidebar-tooltip">{tooltip}</span>
       </div>
     );
   }

@@ -37,6 +37,7 @@
     border-radius: 0.8rem;
     background-color: #5865F2;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .SideBarIcon:hover svg{
@@ -58,6 +59,7 @@
     transform: translate(10px, 0px);
     animation: toolTipAnimation 20ms 1 ease-in;
     z-index: -1;
+    position: fixed;
 }
 
 @keyframes toolTipAnimation {

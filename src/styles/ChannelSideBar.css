@@ -1,0 +1,46 @@
+.channelSideBarWrapper {
+    margin-left: 4.8rem;
+    width: 15%;
+    background-color: #2B2D31;
+    height: 100vh;
+    font-family: "Lexend", sans-serif;
+    color: #949BA4;
+}
+
+.channelSideBar {
+    padding: 1rem;
+}
+
+.channelSideBar .tabHeader {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.channelSideBar .channelWrapper .tabChannel {
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.channelSideBar .channelWrapper .tabChannel:hover {
+    background-color: #3F4248;
+    border-radius: 0.5rem;
+}
+
+.channelSideBar .channelWrapper .tabChannel svg {
+    margin-right: 0.5rem;
+}
+
+.channelSideBar .tabHeader .plus {
+    margin-left: auto;
+}
+
+.channelSideBar .tabHeader svg:not(.plus) {
+    margin-right: 0.2rem;
+}
