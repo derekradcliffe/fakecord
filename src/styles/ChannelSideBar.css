@@ -5,42 +5,58 @@
     height: 100vh;
     font-family: "Lexend", sans-serif;
     color: #949BA4;
+    padding: 0.5rem;
 }
 
 .channelSideBar {
     padding: 1rem;
 }
 
-.channelSideBar .tabHeader {
-    font-weight: 600;
+.dropdown .dropdownHeader {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 
-.channelSideBar .channelWrapper .tabChannel {
-    font-weight: 300;
+.dropdown .dropdownHeader h5 {
+    margin: 0;
+}
+
+.dropdownSelection {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     cursor: pointer;
-    margin-left: 1rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.8rem;
+    width: 100%;
     padding: 0.5rem;
 }
 
-.channelSideBar .channelWrapper .tabChannel:hover {
+.dropdownSelection:hover {
     background-color: #3F4248;
     border-radius: 0.5rem;
+    padding: 0.5rem;
 }
 
-.channelSideBar .channelWrapper .tabChannel svg {
+.dropdownSelection h5 {
+    margin: 0;
+    align-self: center;
+}
+
+.dropdown .dropdownHeader h5:hover {
+    color: #ffffff;
+}
+
+.dropdown .dropdownHeader .arrow {
     margin-right: 0.5rem;
+    align-self: center;
 }
 
-.channelSideBar .tabHeader .plus {
+.dropdown .dropdownHeader .plus {
     margin-left: auto;
 }
 
-.channelSideBar .tabHeader svg:not(.plus) {
-    margin-right: 0.2rem;
+.channelBlockHeader {
+    width: fit-content;
 }
